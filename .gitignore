@@ -1,1 +1,10 @@
+## Rider
 .idea/
+
+## FMOD
+.user/
+.cache/
+.unsaved/
+
+## Other
+Scripts/jsconfig.json
