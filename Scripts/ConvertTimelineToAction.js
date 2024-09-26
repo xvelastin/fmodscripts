@@ -5,9 +5,12 @@ studio.menu.addMenuItem({
 
   execute: function () {
     var sel = studio.window.browserCurrent(); // currently only works for one event at a time
-
-    if (!sel.isOfExactType("Event")) return;
     
+    if (!sel || !sel.isOfExactType("Event")) {
+      alert("Select an event in the browser to convert.");
+      return;
+    } 
+
     var event = sel;
 
     // add new action sheet
