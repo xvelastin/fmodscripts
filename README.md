@@ -1,6 +1,10 @@
 # FMOD Scripts
 
-Dumping/sharing ground for FMOD scripts.
+Dumping/sharing ground for my more-or-less good to go FMOD scripts.
+
+## FMOD Studio Project
+
+Fork/download the whole repo and run `fmodscripts-public.fspro` (FMOD v2.03.01). I've added some example Events there so you can try out some of the scripts below. I've tested them a fair bit, but if you do try them out, let me know if you find any errors or weird behaviour - I might not have considered all workflows or use cases.
 
 
 ## Events
