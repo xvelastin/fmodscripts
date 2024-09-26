@@ -77,6 +77,9 @@
 			<destination>{e7fa0453-5d46-4683-9e39-a59fc42d90ca}</destination>
 			<destination>{8af38a2c-4c9b-450c-910f-3682748f77ad}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{d47566ca-e1c3-4033-945b-29cbeaf7d7ca}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{06438f3c-5e8f-4c37-8c1c-47df5ff2a5f5}">
 		<relationship name="effectChain">
@@ -137,6 +140,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{06438f3c-5e8f-4c37-8c1c-47df5ff2a5f5}</destination>
+		</relationship>
+	</object>
+	<object class="NamedMarker" id="{d47566ca-e1c3-4033-945b-29cbeaf7d7ca}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="name">
+			<value>! With the event selected in the Browser, run "Convert to Action Event" script.</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{dbb67fae-5df9-46d8-9ab8-18d113f28188}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{cf89f0e6-5fb4-4701-9f29-b010a5a5569e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{07dd4eae-3961-4fe6-9763-bc0772195546}">
