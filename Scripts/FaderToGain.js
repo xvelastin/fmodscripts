@@ -2,6 +2,10 @@
 
 studio.menu.addMenuItem({
     name: 'Fader to Gain',
+    
+    isEnabled: function() {
+        return studio.window.deckCurrent() || studio.window.editorCurrent() || studio.window.browserCurrent();
+    },
 
     execute: function()
     {
@@ -37,7 +41,7 @@ studio.menu.addMenuItem({
         selectedInBrowser.forEach(function(sel)
         {
             if (!IsOfAllowableBrowserType(sel)) {
-                alert("Not implemented for selected type: " + sel.entity);
+                alert("FaderToGain is not implemented for selected type: " + sel.entity);
                 return;
             }
 

@@ -2,7 +2,11 @@
 
 studio.menu.addMenuItem({
     name: 'Consolidate Sounds',
-
+    
+    isEnabled: function () {
+        return studio.window.editorSelection() !== null && studio.window.editorSelection().length > 0;
+    },
+    
     execute: function()
     {
         var selectedInEditor = studio.window.editorSelection();

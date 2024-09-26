@@ -2,16 +2,17 @@
 
 studio.menu.addMenuItem({
   name: "Convert To Action Event",
+  
+  isEnabled: function() {
+    return studio.window.browserCurrent() && studio.window.browserCurrent().isOfExactType("Event");
+  },
 
   execute: function () {
-    var sel = studio.window.browserCurrent(); // currently only works for one event at a time
+    var event = studio.window.browserCurrent(); // currently only works for one event at a time
     
-    if (!sel || !sel.isOfExactType("Event")) {
-      alert("Select an event in the browser to convert.");
+    if (!event || !event.isOfExactType("Event")) {
       return;
     } 
-
-    var event = sel;
 
     // add new action sheet
     var actionSheet = studio.project.create("ActionSheet");
